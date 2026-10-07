@@ -28,7 +28,6 @@ int read_csv(string filename, char separator){
     }
     F_output<<"}\n";
 
-    F_output<<"\\hline\n";
 
     F_output<<cells.front();
 
@@ -49,7 +48,7 @@ int read_csv(string filename, char separator){
     }
     if (cells.empty()) return 0;
     
-    F_output <<"\\hline\n";
+    F_output <<"\\\\hline\n";
     F_output<<cells.front();
 
     for (size_t i=1; i<(cells.size()); ++i){
